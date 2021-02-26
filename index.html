@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email signature</title>
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST/browser-sync/browser-sync-client.js'><\/script>".replace("HOST", location.hostname + ':3000'));//]]>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" media="all" href="styles.css"></link>
+  <script src="assets/clipboard.min.js"></script>
+  <script src="javascript.js"></script>
+</head>
+
+<body>
+<div class="no-select">
+  <div class="form">
+    <input type="url" placeholder="Avatar url" class="avatar" />
+    <select id="title" class="brand" name="title">
+      <option value="codefield" selected>Codefield</option>
+      <option value="medfield">Medfield</option>
+      <option value="techfield">Techfield</option>
+    </select>
+    <hr>
+    <input type="text" placeholder="Voornaam Achternaam" class="name" />
+    <input type="text" placeholder="Jobtitle" class="job" />
+    <input type="text" placeholder="Telefoonnummer" class="phone" />
+    <input type="email" placeholder="Email adres" class="email" />
+    <input type="text" placeholder="Adres" value="Europalaan 400, 3526 KS Utrecht" class="address" />
+    <input type="url" placeholder="Website" value="https://codefield.nl" class="site" />
+    <hr>
+    <div class="social" style="padding: 0!important; display:flex !important; flex-direction: flex-start; flex-wrap: wrap;">
+      <input class="fb-checkbox checkbox" type="checkbox" style="flex: 0 1 10px;">
+        <input type="url" placeholder="Facebook url" class="facebook" style="flex: 1 0 280px; margin-left: 20px;"/>
+      <input class="tw-checkbox checkbox" type="checkbox" style="flex: 0 1 10px;">
+        <input type="url" placeholder="Twitter url" class="twitter" style="flex: 1 0 280px; margin-left: 20px;"/>
+      <input class="li-checkbox checkbox" type="checkbox" style="flex: 0 1 10px;">
+        <input type="url" placeholder="Linkedin url" class="linkedin" style="flex: 1 0 280px; margin-left: 20px;"/>
+    </div>
+    
+    <button onClick="copyToClipboard()" data-clipboard-target="#to-copy" class="copy">Kopieër handtekening</button>
+  </div>
+</div>
+
+<table style="font-size: medium; color: rgb(68,68,68) !important; font-family: Arial; margin: 40px 20px 20px 20px;" id="to-copy" class="sc-gPEVay eQYmiW" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td>
+        <table style="font-size: medium; font-family: Arial;" class="sc-gPEVay eQYmiW" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;" width="130">
+                <span style="margin-right: 35px; display: block;" class="sc-kgAjT cuzzPp">
+                  <img class="avatar" src="assets/renzo.jpg" role="presentation"
+                    style="object-fit: cover; width: 100px; height: 100px; background-color: #dfdfdf; border-radius: 100%;" class="sc-cHGsZl bHiaRe" width="100">
+                    <img src="https://codefield-nl.github.io/email-signature/assets/codefield.png" class="brand" role="presentation" style="max-width: 100px; object-fit: contain; max-height: 20px; display: inline-block; margin-top: 16px;" class="sc-cHGsZl bHiaRe" width="100">
+                </span></td>
+              <td style="vertical-align: middle; font-size: 14px;">
+                <p color="#120439" style="margin: 0px; color: rgb(68,68,68);" class="sc-fMiknA bxZCMx">
+                  <span class="name" color="#120439" style="margin: 0px; font-weight: bold; color: rgb(68,68,68);" >Voornaam Achternaam</span><br>
+                  <span class="job" style="line-height:1.4;">Job titel</span><br>
+                  <hr style="width:450px; margin: 10px 0; border: none; background-color: #fbfbfb; height: 2px;">
+                  <a href="tel:+31612345678" class="phone" style="line-height:1.4; text-decoration: none; color: rgb(68,68,68);">+31 6 12 34 56 78</a><br>
+                  <a href="mailto:info@example.nl" class="email" style="line-height:1.4; text-decoration: none; color: rgb(68,68,68);">info@example.nl</a><br>
+                  <span class="address" style="line-height:1.4;">Europalaan 400, 3526 KS Utrecht</span><br>
+                  <a href="//codefield.nl" class="site" style="line-height:1.4; text-decoration: none; color: rgb(68,68,68);">codefield.nl</a>
+
+                    <a class="linkedin" href="https://linkedin.nl" color="#120439"
+                    style="display: none; padding: 0px; float: right; margin-right: 10px; margin-top: -7px;"
+                    class="sc-hzDkRC kpsoyz">
+                    <img
+                      src="assets/social/linkedin.png"
+                      alt="linkedin" color="#120439"
+                      style=" max-width: 135px; display: block; width: 30px; height: 30px;"
+                      class="sc-bRBYWo ccSRck" height="24">
+                  </a>
+                    <a class="twitter" href="https://twitter.com" color="#120439"
+                      style="display: none; padding: 0px; float: right; margin-right: 10px; margin-top: -7px;"
+                      class="sc-hzDkRC kpsoyz">
+                      <img
+                        src="assets/social/twitter.png"
+                        alt="twitter" color="#120439"
+                        style=" max-width: 135px; display: block; width: 30px; height: 30px;"
+                        class="sc-bRBYWo ccSRck" height="24">
+                    </a>
+                    <a class="facebook" href="https://facebook.com" color="#120439"
+                      style="display: none; padding: 0px; float: right; margin-right: 10px; margin-top: -7px;"
+                      class="sc-hzDkRC kpsoyz">
+                      <img
+                        src="assets/social/facebook.png"
+                        alt="facebook" color="#120439"
+                        style=" max-width: 135px; display: block; width: 30px; height: 30px;"
+                        class="sc-bRBYWo ccSRck" height="24">
+                    </a>
+                </p>
+              </td>
+              <td width="30">
+                <div style="width: 30px;">
+                </div>
+              </td>
+              <td width="30">
+                <div style="width: 30px;">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- <tr>
+      <td>
+        <table style="font-size: medium; font-family: Arial; width: 100%;" class="sc-gPEVay eQYmiW" cellspacing="0"
+          cellpadding="0">
+          <tbody>
+            <tr>
+              <td height="30">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr> -->
+    <tr>
+      <td>
+        <table style="font-size: medium; font-family: Arial; width: 100%;" class="sc-gPEVay eQYmiW" cellspacing="0"
+          cellpadding="0">
+
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+
+.no-select, .no-select * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.no-select {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  left: calc(100% - 390px);
+  background-color: #dfdfdf;
+  top: 0;
+  height: 100vh;
+  width: 390px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 50px;
+  width: 350px;
+  padding: 20px;
+}
+.form * {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+button {
+  cursor: pointer;
+  padding: 12px !important;
+}
+
+button {
+  background-color: #87a49e;
+  /* color: #ececec; */
+  transition: background-color 250ms linear;
+  -webkit-transition: background-color 250ms linear;
+  padding: 2px 5px;
+}
+
+input[type="checkbox"]:not(:checked) + input {
+  pointer-events:none;
+  opacity: .3;
+}
+
+.update {
+  width: 60%;
+}
+.copy {
+}
+.copy.copied {
+  background-color: #42d93d;
+}
+
+* {
+  font-family: Arial;
+}
