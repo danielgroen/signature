@@ -26,7 +26,7 @@ $(window).on('load', function() {
 
   $('.no-select select').on('change', function(el) {
     const newVal = el.target.value;
-    $(`#to-copy .brand`).attr('src', `https://codefield-nl.github.io/email-signature/assets/${newVal}.png`);
+    $(`#to-copy .brand`).attr('src', `https://signature.danielgroen.nl/assets/${newVal}.png`);
     $('.site').val(`https://${newVal}.nl`);
     $('.site').text(`${newVal}.nl`);
     $('.site').attr('href', `https://${newVal}.nl`);
